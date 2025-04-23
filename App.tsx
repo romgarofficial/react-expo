@@ -1,13 +1,15 @@
-import { ScreenContent } from 'components/ScreenContent';
-import { StatusBar } from 'expo-status-bar';
+import BtmNavbar from './components/BtmNavBar'
+
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
 import './global.css';
 
 export default function App() {
   return (
     <>
-      <ScreenContent title="Home" path="App.tsx" />
-      <StatusBar style="auto" />
+    <NavigationContainer>
+      <BtmNavbar />
+    </NavigationContainer>
     </>
   );
 }
